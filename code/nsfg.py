@@ -5,11 +5,14 @@ Copyright 2010 Allen B. Downey
 License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 """
 
-import sys
+import os
 import numpy as np
 import thinkstats2
 
 from collections import defaultdict
+
+# Change the working directory to the directory containing the script
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 def ReadFemResp(dct_file='2002FemResp.dct',
